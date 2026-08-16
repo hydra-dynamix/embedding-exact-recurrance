@@ -5,6 +5,7 @@ import torch
 
 from src.episodic_encoding import (
     EncodedEpisode,
+    EncodingProvenance,
     SequencedBinaryAddress,
     encode_episode,
     normalize_contextual_state_vectors,
@@ -31,6 +32,17 @@ class FakeModel(torch.nn.Module):
         return SimpleNamespace(hidden_states=(self.final_layer_states,))
 
 
+def encoding_provenance(tau_threshold: float = 0.6) -> EncodingProvenance:
+    return EncodingProvenance(
+        model_id="test-model",
+        model_revision="test-model-revision",
+        tokenizer_id="test-tokenizer",
+        tokenizer_revision="test-tokenizer-revision",
+        hidden_layer=-1,
+        tau_threshold=tau_threshold,
+    )
+
+
 def encoded_evidence(binary_state_sequence: torch.Tensor) -> EncodedEpisode:
     state_count, state_dimensions = binary_state_sequence.shape
     raw = torch.arange(
@@ -38,6 +50,8 @@ def encoded_evidence(binary_state_sequence: torch.Tensor) -> EncodedEpisode:
         dtype=torch.float32,
     ).reshape(state_count, state_dimensions)
     return EncodedEpisode(
+        input_bytes=b"synthetic episode",
+        encoding_provenance=encoding_provenance(),
         input_ids=torch.arange(state_count).reshape(1, state_count),
         attention_mask=torch.ones((1, state_count), dtype=torch.int64),
         contextual_positions=torch.arange(state_count),
@@ -82,7 +96,8 @@ class EpisodicEncodingTests(unittest.TestCase):
             model=model,
             input_ids=torch.tensor([[10, 0, 20]]),
             attention_mask=torch.tensor([[1, 0, 1]]),
-            tau_threshold=0.6,
+            input_bytes=b"synthetic episode",
+            encoding_provenance=encoding_provenance(),
         )
 
         torch.testing.assert_close(encoded.contextual_positions, torch.tensor([0, 2]))

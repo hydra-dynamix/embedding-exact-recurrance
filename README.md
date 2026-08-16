@@ -47,7 +47,28 @@ binary_state_sequence[T,D] = A_e
 
 If several occurrences produce the same `A_e`, the store retains all of them in one collision bucket. Each occurrence also has a unique `episode_id` for direct hydration. The evidence is stored once; the sequenced-address and episode-ID maps are access paths to the same stored occurrence.
 
-Persistent storage, encoder provenance, recurrence, and consolidation are deliberately left for the next implementation stages. Recurrence will operate on local contiguous subsequences `(B_i, ..., B_(i+L-1))` inside stored episode addresses rather than requiring whole-address equality.
+With `--store-root`, `PersistentEpisodicMemoryStore` writes exact input bytes and uncompressed input IDs, masks, positions, `H`, `N`, and `A_e` tensors beneath the address digest. Each occurrence records pinned model/tokenizer/layer/tau/normalization provenance and a chronological store ordinal. Hash, shape, dtype, address, and provenance checks run during restart hydration.
+
+## Local recurrence
+
+`LocalRecurrenceIndex` enumerates every legal contiguous subsequence inside each stored episode boundary:
+
+```text
+(B_i, ..., B_(i+L-1)) -> every (episode_id, start_offset, length)
+```
+
+By default it indexes all lengths from one through the complete episode length. Exact keys include encoder identity, length, dimensions, order, and all bits. A recurrent candidate requires support from at least two distinct episodes, but every supporting occurrence—including duplicates within an episode—is retained. No result cap, ranking, labels, or cross-boundary window is used.
+
+## Lossless construction factoring
+
+For an explicitly bound group of same-shape occurrence windows, consolidation computes the position-wise common binary component `C` and an exact residual for each occurrence:
+
+```text
+B_window(e) = C union residual(e)
+C intersect residual(e) = empty
+```
+
+Every source window reconstructs exactly. Candidate versions retain complete occurrence bindings, encoder identity, recurrence-key provenance, residuals, and predecessor version references. Exact recurrent windows form the initial zero-residual arm. Candidates are never automatically admitted as constructions; admission remains a separate authority boundary.
 
 ## Run
 
@@ -55,9 +76,12 @@ Encode, store, and retrieve one or more text blocks:
 
 ```bash
 .venv/bin/python main.py --tau-threshold 0.8 "dog" "a second text block"
+
+# Persist evidence and hydrate it on later runs:
+.venv/bin/python main.py --store-root ./memory --tau-threshold 0.8 "dog" "dog"
 ```
 
-The default output contains each `binary_state_sequence`, its sequenced-address shape, and every episode ID in the exact-address collision bucket. Raw `H` and normalized `N` are optional diagnostics:
+The output contains each `binary_state_sequence`, its sequenced-address shape, every episode ID in the exact-address collision bucket, the complete local-window count, and every recurrent/construction candidate. Raw `H` and normalized `N` are optional diagnostics:
 
 ```bash
 .venv/bin/python main.py --tau-threshold 0.8 --debug-encoding "dog"

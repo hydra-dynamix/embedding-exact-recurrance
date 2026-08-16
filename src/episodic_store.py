@@ -36,6 +36,8 @@ class EpisodicMemoryStore:
             raise ValueError(f"episode_id {episode_id!r} is already stored")
 
         evidence_snapshot = EncodedEpisode(
+            input_bytes=bytes(evidence.input_bytes),
+            encoding_provenance=evidence.encoding_provenance,
             input_ids=evidence.input_ids.detach().cpu().clone(),
             attention_mask=evidence.attention_mask.detach().cpu().clone(),
             contextual_positions=(
@@ -80,6 +82,10 @@ class EpisodicMemoryStore:
             return self._episodes_by_id[episode_id]
         except KeyError as error:
             raise KeyError(f"episode_id {episode_id!r} is not stored") from error
+
+    def episodes(self) -> tuple[StoredEpisode, ...]:
+        """Return every occurrence in immutable storage order."""
+        return tuple(self._episodes_by_id.values())
 
     def __len__(self) -> int:
         return len(self._episodes_by_id)
