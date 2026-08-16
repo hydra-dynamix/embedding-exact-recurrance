@@ -24,7 +24,7 @@ def get_contextual_state_vectors(
     Shape:
         [contextual_position_count, representation_dimensions]
 
-    Normalization is deliberately left to the detector layer so the model's
+    Normalization is deliberately left to the episodic encoder so the model's
     native contextual states, including their magnitudes, remain available.
     """
     if input_ids.ndim != 2 or input_ids.shape[0] != 1:

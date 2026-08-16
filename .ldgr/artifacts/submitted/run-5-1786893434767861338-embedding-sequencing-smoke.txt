@@ -1,0 +1,54 @@
+detector_raw_reference_vectors: (23, 1024)
+tau_threshold: 0.9
+
+experience=1 text='dog'
+position=0 token='dog' raw_vector_norm=110.600082 firing_detector_count=2
+  detector_population:
+    detector_id=10 raw_score=9900.892578 activation=0.978709 margin=0.078709 firing=True source_episode='memory-002' source_offset=0
+    detector_id=0 raw_score=11433.784180 activation=0.960875 margin=0.060875 firing=True source_episode='memory-001' source_offset=0
+    detector_id=11 raw_score=4163.731445 activation=0.693690 margin=-0.206310 firing=False source_episode='memory-002' source_offset=1
+    detector_id=13 raw_score=4206.430176 activation=0.690884 margin=-0.209116 firing=False source_episode='memory-002' source_offset=3
+    detector_id=9 raw_score=3787.522461 activation=0.682200 margin=-0.217800 firing=False source_episode='memory-001' source_offset=9
+    detector_id=22 raw_score=3437.347412 activation=0.681037 margin=-0.218963 firing=False source_episode='memory-002' source_offset=12
+    detector_id=16 raw_score=4147.246094 activation=0.680692 margin=-0.219308 firing=False source_episode='memory-002' source_offset=6
+    detector_id=5 raw_score=4094.995117 activation=0.676847 margin=-0.223153 firing=False source_episode='memory-001' source_offset=5
+    detector_id=21 raw_score=3501.521973 activation=0.676267 margin=-0.223733 firing=False source_episode='memory-002' source_offset=11
+    detector_id=4 raw_score=4073.570312 activation=0.675600 margin=-0.224400 firing=False source_episode='memory-001' source_offset=4
+    detector_id=3 raw_score=3732.446289 activation=0.674244 margin=-0.225756 firing=False source_episode='memory-001' source_offset=3
+    detector_id=8 raw_score=3671.639160 activation=0.672895 margin=-0.227105 firing=False source_episode='memory-001' source_offset=8
+    detector_id=12 raw_score=3623.771484 activation=0.670309 margin=-0.229690 firing=False source_episode='memory-002' source_offset=2
+    detector_id=2 raw_score=3603.479004 activation=0.669144 margin=-0.230856 firing=False source_episode='memory-001' source_offset=2
+    detector_id=15 raw_score=3875.708008 activation=0.662524 margin=-0.237476 firing=False source_episode='memory-002' source_offset=5
+    detector_id=17 raw_score=3987.298340 activation=0.660044 margin=-0.239956 firing=False source_episode='memory-002' source_offset=7
+    detector_id=14 raw_score=4033.702637 activation=0.658260 margin=-0.241740 firing=False source_episode='memory-002' source_offset=4
+    detector_id=1 raw_score=3514.225586 activation=0.657497 margin=-0.242503 firing=False source_episode='memory-001' source_offset=1
+    detector_id=6 raw_score=4002.141113 activation=0.657389 margin=-0.242611 firing=False source_episode='memory-001' source_offset=6
+    detector_id=20 raw_score=3349.474121 activation=0.652701 margin=-0.247299 firing=False source_episode='memory-002' source_offset=10
+    detector_id=19 raw_score=3776.302246 activation=0.645713 margin=-0.254287 firing=False source_episode='memory-002' source_offset=9
+    detector_id=18 raw_score=3622.639893 activation=0.639827 margin=-0.260173 firing=False source_episode='memory-002' source_offset=8
+    detector_id=7 raw_score=2960.898438 activation=0.611794 margin=-0.288206 firing=False source_episode='memory-001' source_offset=7
+position=1 token='<|endoftext|>' raw_vector_norm=100.316582 firing_detector_count=0
+  detector_population:
+    detector_id=0 raw_score=4716.957031 activation=0.709623 margin=-0.190377 firing=False source_episode='memory-001' source_offset=0
+    detector_id=10 raw_score=3667.604492 activation=0.695507 margin=-0.204493 firing=False source_episode='memory-002' source_offset=0
+    detector_id=9 raw_score=3541.104736 activation=0.687808 margin=-0.212192 firing=False source_episode='memory-001' source_offset=9
+    detector_id=11 raw_score=3441.951904 activation=0.676528 margin=-0.223472 firing=False source_episode='memory-002' source_offset=1
+    detector_id=8 raw_score=3287.095215 activation=0.670654 margin=-0.229346 firing=False source_episode='memory-001' source_offset=8
+    detector_id=22 raw_score=2930.204102 activation=0.670147 margin=-0.229853 firing=False source_episode='memory-002' source_offset=12
+    detector_id=5 raw_score=3526.231445 activation=0.667895 margin=-0.232105 firing=False source_episode='memory-001' source_offset=5
+    detector_id=2 raw_score=3070.735840 activation=0.658913 margin=-0.241087 firing=False source_episode='memory-001' source_offset=2
+    detector_id=13 raw_score=3170.451172 activation=0.658621 margin=-0.241379 firing=False source_episode='memory-002' source_offset=3
+    detector_id=21 raw_score=2830.274658 activation=0.657082 margin=-0.242918 firing=False source_episode='memory-002' source_offset=11
+    detector_id=3 raw_score=3031.742188 activation=0.656041 margin=-0.243959 firing=False source_episode='memory-001' source_offset=3
+    detector_id=1 raw_score=3082.923828 activation=0.652331 margin=-0.247669 firing=False source_episode='memory-001' source_offset=1
+    detector_id=4 raw_score=3140.189453 activation=0.649241 margin=-0.250759 firing=False source_episode='memory-001' source_offset=4
+    detector_id=12 raw_score=2709.330566 activation=0.640386 margin=-0.259614 firing=False source_episode='memory-002' source_offset=2
+    detector_id=16 raw_score=2878.086914 activation=0.638251 margin=-0.261749 firing=False source_episode='memory-002' source_offset=6
+    detector_id=15 raw_score=2828.482422 activation=0.630768 margin=-0.269232 firing=False source_episode='memory-002' source_offset=5
+    detector_id=17 raw_score=2915.479980 activation=0.629019 margin=-0.270981 firing=False source_episode='memory-002' source_offset=7
+    detector_id=14 raw_score=2831.428223 activation=0.622478 margin=-0.277522 firing=False source_episode='memory-002' source_offset=4
+    detector_id=6 raw_score=2702.380371 activation=0.617168 margin=-0.282831 firing=False source_episode='memory-001' source_offset=6
+    detector_id=20 raw_score=2262.921631 activation=0.613741 margin=-0.286259 firing=False source_episode='memory-002' source_offset=10
+    detector_id=7 raw_score=2168.206543 activation=0.590256 margin=-0.309744 firing=False source_episode='memory-001' source_offset=7
+    detector_id=19 raw_score=2098.507324 activation=0.589274 margin=-0.310726 firing=False source_episode='memory-002' source_offset=9
+    detector_id=18 raw_score=2073.851318 activation=0.588253 margin=-0.311747 firing=False source_episode='memory-002' source_offset=8

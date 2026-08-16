@@ -1,0 +1,5 @@
+detector_raw_reference_vectors: (23, 1024)
+tau_threshold: 0.8
+
+experience=1 text='dog'
+coactivation_fingerprint_sequence: [[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]

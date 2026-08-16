@@ -45,32 +45,21 @@ if __name__ == "__main__":
             tau_threshold=args.tau_threshold,
         )
         episode_id = f"episode-{episode_index:03d}"
-        stored_episode = episode_store.store(
+        episode_store.store(
             episode_id=episode_id,
             text=text,
-            evidence=encoded_episode,
+            address=encoded_episode.address,
         )
-        retrieved_episodes = episode_store.retrieve(
-            encoded_episode.sequenced_address
-        )
+        retrieved_episodes = episode_store.retrieve(encoded_episode.address)
 
         print(f"episode_id={episode_id!r} text={text!r}")
         print(
-            "binary_state_sequence_shape:",
-            tuple(encoded_episode.binary_state_sequence.shape),
+            "binary_address_shape:",
+            tuple(encoded_episode.binary_address_sequence.shape),
         )
         print(
-            "binary_state_sequence:",
-            encoded_episode.binary_state_sequence.tolist(),
-        )
-        print(
-            "sequenced_address:",
-            {
-                "state_count": stored_episode.sequenced_address.state_count,
-                "state_dimensions": (
-                    stored_episode.sequenced_address.state_dimensions
-                ),
-            },
+            "binary_address_sequence:",
+            encoded_episode.binary_address_sequence.tolist(),
         )
         print(
             "retrieved_episode_ids:",

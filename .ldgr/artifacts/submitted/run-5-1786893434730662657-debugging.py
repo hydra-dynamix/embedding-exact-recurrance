@@ -9,12 +9,9 @@ def print_population_debug(
     tokenizer: Any,
     detector_bank: DetectorBank,
     *,
-    strongest_detector_count: int = 5,
     stream: TextIO | None = None,
 ) -> None:
-    """Print the detector population recruited at each contextual position."""
-    if strongest_detector_count <= 0:
-        raise ValueError("strongest_detector_count must be positive")
+    """Print every detector response at each contextual position."""
 
     contextual_row_count = experience.contextual_positions.shape[0]
     if experience.contextual_positions.ndim != 1:
@@ -23,12 +20,16 @@ def print_population_debug(
         raise ValueError("input_ids must have shape [1, model_position_count]")
     if experience.raw_contextual_state_vectors.shape[0] != contextual_row_count:
         raise ValueError("raw contextual states must contain one vector per row")
-    if experience.detector_margins.ndim != 2:
+    if experience.detector_scores.ndim != 2:
         raise ValueError(
-            "detector_margins must have shape [contextual_row_count, detector_count]"
+            "detector_scores must have shape [contextual_row_count, detector_count]"
         )
-    if experience.coactivation_states.shape != experience.detector_margins.shape:
-        raise ValueError("coactivation_states must match detector_margins")
+    if experience.detector_activations.shape != experience.detector_scores.shape:
+        raise ValueError("detector_activations must match detector_scores")
+    if experience.detector_margins.shape != experience.detector_scores.shape:
+        raise ValueError("detector_margins must match detector_scores")
+    if experience.coactivation_states.shape != experience.detector_scores.shape:
+        raise ValueError("coactivation_states must match detector_scores")
     if experience.detector_margins.shape[0] != contextual_row_count:
         raise ValueError("detector margins must contain one population per row")
 
@@ -57,18 +58,18 @@ def print_population_debug(
         firing_detector_ids = experience.coactivation_states[
             contextual_row
         ].nonzero(as_tuple=False).flatten().tolist()
-        ranked_firing_detector_ids = sorted(
-            firing_detector_ids,
+        ranked_detector_ids = sorted(
+            range(detector_count),
             key=lambda detector_id: (
                 -float(
-                    experience.detector_margins[
+                    experience.detector_activations[
                         contextual_row,
                         detector_id,
                     ].item()
                 ),
                 detector_id,
             ),
-        )[:strongest_detector_count]
+        )
 
         print(
             f"position={contextual_position} "
@@ -78,14 +79,28 @@ def print_population_debug(
             file=output,
         )
 
-        if not ranked_firing_detector_ids:
-            print("  strongest_firing_detectors: none", file=output)
-            continue
-
-        print("  strongest_firing_detectors:", file=output)
-        for detector_id in ranked_firing_detector_ids:
+        print("  detector_population:", file=output)
+        for detector_id in ranked_detector_ids:
+            raw_score = float(
+                experience.detector_scores[
+                    contextual_row,
+                    detector_id,
+                ].item()
+            )
+            activation = float(
+                experience.detector_activations[
+                    contextual_row,
+                    detector_id,
+                ].item()
+            )
             margin = float(
                 experience.detector_margins[
+                    contextual_row,
+                    detector_id,
+                ].item()
+            )
+            firing = bool(
+                experience.coactivation_states[
                     contextual_row,
                     detector_id,
                 ].item()
@@ -94,7 +109,10 @@ def print_population_debug(
             source_offset = int(detector_bank.source_offsets[detector_id].item())
             print(
                 f"    detector_id={detector_id} "
+                f"raw_score={raw_score:.6f} "
+                f"activation={activation:.6f} "
                 f"margin={margin:.6f} "
+                f"firing={firing} "
                 f"source_episode={source_episode_id!r} "
                 f"source_offset={source_offset}",
                 file=output,
