@@ -1,5 +1,7 @@
 # Embedding sequencing
 
+Published as [`hydra-dynamix/embedding-exact-recurrance`](https://github.com/hydra-dynamix/embedding-exact-recurrance). Complete real-Qwen consolidation evidence is hosted in the Hugging Face dataset [`bakobiibizo/embedding-exact-recurrance`](https://huggingface.co/datasets/bakobiibizo/embedding-exact-recurrance).
+
 This project encodes a complete text episode into an ordered sequence of binary contextual states and stores its complete in-process evidence under that sequenced address. It does not compare the episode with stored memories, detector prototypes, or reference vectors during initial encoding.
 
 ## State and address terminology
