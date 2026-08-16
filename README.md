@@ -70,6 +70,21 @@ C intersect residual(e) = empty
 
 Every source window reconstructs exactly. Candidate versions retain complete occurrence bindings, encoder identity, recurrence-key provenance, residuals, and predecessor version references. Exact recurrent windows form the initial zero-residual arm. Candidates are never automatically admitted as constructions; admission remains a separate authority boundary.
 
+## Exact repeated-episode consolidation
+
+`ExactEpisodeConsolidator` observes complete stored episodes and admits one canonical identity for an exact `(encoding_id, A_e)` only after a declared occurrence-support threshold. Source episodes remain immutable. Threshold 4 creates an immutable support-4 version and later occurrences create successor versions under the same canonical identity; threshold 5 waits for the fifth occurrence. One-off novel addresses remain unconsolidated.
+
+Run the interleaved repeated/novel real-Qwen trial with:
+
+```bash
+.venv/bin/python experiments/repeated_episode_consolidation.py \
+  --output artifacts/interleaved-repeated-episode-consolidation
+.venv/bin/python experiments/audit_repeated_episode_consolidation.py \
+  --root artifacts/interleaved-repeated-episode-consolidation
+```
+
+This is whole-episode consolidation under supplied episode boundaries. It does not use sequence-order nulls, semantic labels, local-window chance recurrence, or construction similarity.
+
 ## Run
 
 Encode, store, and retrieve one or more text blocks:

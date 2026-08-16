@@ -1,0 +1,736 @@
+{
+  "admission_events": {
+    "4": [
+      {
+        "canonical_id": "a2d0d95a0cc2ea623279076732649badc11bf491ff6382d945d9adbd414ff7eb",
+        "episode_id": "repeat-0-occurrence-3",
+        "predecessor_version_id": null,
+        "stream_ordinal": 18,
+        "support": 4,
+        "version_id": "484305deeb04ccb51f6cf81315c6c8388dd3753be082fd1898c6d432392782aa"
+      },
+      {
+        "canonical_id": "60fe97d1eaa5795702c0e303aa3e9d9db80c68c94f93bd1bff344512e9eae3ec",
+        "episode_id": "repeat-1-occurrence-3",
+        "predecessor_version_id": null,
+        "stream_ordinal": 19,
+        "support": 4,
+        "version_id": "d4df992d4cf6b383c5ca8a2cfb535c5d0be8c55ffcf3a37b143aa05143dd841d"
+      },
+      {
+        "canonical_id": "1b971b0d69a23a70a5c5ec454845e65ca031902c2974fc2c4dc33ccd5b2b6056",
+        "episode_id": "repeat-2-occurrence-3",
+        "predecessor_version_id": null,
+        "stream_ordinal": 20,
+        "support": 4,
+        "version_id": "2503172cacea3a7357600b2d92d64cb4a67058b3f84bffda65c5b3ffb4d1a547"
+      },
+      {
+        "canonical_id": "a2d0d95a0cc2ea623279076732649badc11bf491ff6382d945d9adbd414ff7eb",
+        "episode_id": "repeat-0-occurrence-4",
+        "predecessor_version_id": "484305deeb04ccb51f6cf81315c6c8388dd3753be082fd1898c6d432392782aa",
+        "stream_ordinal": 24,
+        "support": 5,
+        "version_id": "95d8880f09101d2bb697a9426a1b458e2881028aebb0f5bb4cee29ca8df83f2d"
+      },
+      {
+        "canonical_id": "60fe97d1eaa5795702c0e303aa3e9d9db80c68c94f93bd1bff344512e9eae3ec",
+        "episode_id": "repeat-1-occurrence-4",
+        "predecessor_version_id": "d4df992d4cf6b383c5ca8a2cfb535c5d0be8c55ffcf3a37b143aa05143dd841d",
+        "stream_ordinal": 25,
+        "support": 5,
+        "version_id": "6aa3f107c663b36dea7ff433d7eb472e355d85170819af7bfb6fabc1188a0fdd"
+      },
+      {
+        "canonical_id": "1b971b0d69a23a70a5c5ec454845e65ca031902c2974fc2c4dc33ccd5b2b6056",
+        "episode_id": "repeat-2-occurrence-4",
+        "predecessor_version_id": "2503172cacea3a7357600b2d92d64cb4a67058b3f84bffda65c5b3ffb4d1a547",
+        "stream_ordinal": 26,
+        "support": 5,
+        "version_id": "1bddbe236a67ce6ae169c94f12739a28fd5e1b7b924f87b45cbde65efef77d01"
+      }
+    ],
+    "5": [
+      {
+        "canonical_id": "a2d0d95a0cc2ea623279076732649badc11bf491ff6382d945d9adbd414ff7eb",
+        "episode_id": "repeat-0-occurrence-4",
+        "predecessor_version_id": null,
+        "stream_ordinal": 24,
+        "support": 5,
+        "version_id": "ddd914aeda3c0ee343224bf2caacf6b864689ce350a58482561bae1f28c8a2f7"
+      },
+      {
+        "canonical_id": "60fe97d1eaa5795702c0e303aa3e9d9db80c68c94f93bd1bff344512e9eae3ec",
+        "episode_id": "repeat-1-occurrence-4",
+        "predecessor_version_id": null,
+        "stream_ordinal": 25,
+        "support": 5,
+        "version_id": "29e34af0bd5b5d9abb0a65b912a61f78dc786eade449738780993595a98678db"
+      },
+      {
+        "canonical_id": "1b971b0d69a23a70a5c5ec454845e65ca031902c2974fc2c4dc33ccd5b2b6056",
+        "episode_id": "repeat-2-occurrence-4",
+        "predecessor_version_id": null,
+        "stream_ordinal": 26,
+        "support": 5,
+        "version_id": "48731e00fa39530b0048ed3e91f174bcc6b92ee3ef0caf66e06c8c88d80d7f45"
+      }
+    ]
+  },
+  "canonical_identity": "encoding_id plus complete sequenced address A_e",
+  "checks": {
+    "all_latest_canonicals_bind_five_occurrences": true,
+    "all_occurrences_stored_after_restart": true,
+    "all_repeated_buckets_complete": true,
+    "every_canonical_hydrates_and_replays": true,
+    "novel_episodes_not_consolidated": true,
+    "novel_episodes_remain_singletons": true,
+    "one_model_call_per_occurrence": true,
+    "restart_rebuilds_same_canonical_ids": true,
+    "threshold_4_admits_on_fourth_occurrence": true,
+    "threshold_4_three_singular_canonicals": true,
+    "threshold_5_admits_on_fifth_occurrence": true,
+    "threshold_5_three_singular_canonicals": true
+  },
+  "consolidation_support_thresholds": [
+    4,
+    5
+  ],
+  "elapsed_ns": 2195716683,
+  "experiment_id": "interleaved-repeated-episode-consolidation",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "model_calls": 30,
+  "novel_episode_count": 15,
+  "novel_results": [
+    {
+      "address_digest": "1d0f705d89892f044b2e510004e4f2d0b96420eb76b4c49854c53f14fa8d49f7",
+      "bucket_occurrence_ids": [
+        "novel-0"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-0"
+    },
+    {
+      "address_digest": "66b70227f7085555769459ebe0a4d5213490bfadd7d388146689a2cc7a72fdef",
+      "bucket_occurrence_ids": [
+        "novel-1"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-1"
+    },
+    {
+      "address_digest": "6ceb64f6a1b12d63dd069d3122c34ba2198bbd38bcf4301c87a3c8a37df953e5",
+      "bucket_occurrence_ids": [
+        "novel-2"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-2"
+    },
+    {
+      "address_digest": "705d955e6910e985a65ced5804e9154eee9aef2d7c4763ffabeb3964d85c9a42",
+      "bucket_occurrence_ids": [
+        "novel-3"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-3"
+    },
+    {
+      "address_digest": "6199580b008435f84cc8e6bb62d5c4ef7523eefcc1871272e92bf7fc9cfad213",
+      "bucket_occurrence_ids": [
+        "novel-4"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-4"
+    },
+    {
+      "address_digest": "dc068e61947cddde1db16c9c0e96b1586c0cd91f5cade006fb49c448531e9836",
+      "bucket_occurrence_ids": [
+        "novel-5"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-5"
+    },
+    {
+      "address_digest": "0cc7dd596c8cb2e05e934fb25ddff2cd879cf2c05e3e49ebe4c0b1fb55e30c0a",
+      "bucket_occurrence_ids": [
+        "novel-6"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-6"
+    },
+    {
+      "address_digest": "efd5b69239c8033de8b49e7f868ba204f18dc5f6b7cbc9864e2b410fab65aee0",
+      "bucket_occurrence_ids": [
+        "novel-7"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-7"
+    },
+    {
+      "address_digest": "3ef63eeac4e0c8d8250d209860e9ec84f0189111934d23a989517e750b78e54a",
+      "bucket_occurrence_ids": [
+        "novel-8"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-8"
+    },
+    {
+      "address_digest": "524abc1297dcddfd1bb0a25be839965c3bf5fc5543f963f53103c5f409b5d3af",
+      "bucket_occurrence_ids": [
+        "novel-9"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-9"
+    },
+    {
+      "address_digest": "959024ae6030e4f34442cc41ae868afbb119e710e21c7c25e9364e64943a0867",
+      "bucket_occurrence_ids": [
+        "novel-10"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-10"
+    },
+    {
+      "address_digest": "d57b681f3161fcbce128ebf1715513015254f79f19a71cccf49a76f19ed4c456",
+      "bucket_occurrence_ids": [
+        "novel-11"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-11"
+    },
+    {
+      "address_digest": "03190d9ec766a2b281329b7493db8951841e27216e87928eea10d919d65eb70c",
+      "bucket_occurrence_ids": [
+        "novel-12"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-12"
+    },
+    {
+      "address_digest": "7517b3da12b1daab03a6a9b2e6aac74788380c95be487c73467e855894c0c8c7",
+      "bucket_occurrence_ids": [
+        "novel-13"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-13"
+    },
+    {
+      "address_digest": "0028956724983e939b06fe2fa7e0e95cb8b40a71a8ea55ed2e4b47b4d1ecc179",
+      "bucket_occurrence_ids": [
+        "novel-14"
+      ],
+      "canonical_threshold_4": null,
+      "canonical_threshold_5": null,
+      "episode_id": "novel-14"
+    }
+  ],
+  "occurrences_per_repeated_group": 5,
+  "pass": true,
+  "repeated_episode_groups": 3,
+  "repeated_results": [
+    {
+      "address_digest": "a17860d20b0b3977286596711f6cb87a1dcc4d2b9ae49f07e7437d204d027c4f",
+      "expected_occurrence_ids": [
+        "repeat-0-occurrence-0",
+        "repeat-0-occurrence-1",
+        "repeat-0-occurrence-2",
+        "repeat-0-occurrence-3",
+        "repeat-0-occurrence-4"
+      ],
+      "group": 0,
+      "retrieved_occurrence_ids": [
+        "repeat-0-occurrence-0",
+        "repeat-0-occurrence-1",
+        "repeat-0-occurrence-2",
+        "repeat-0-occurrence-3",
+        "repeat-0-occurrence-4"
+      ],
+      "text": "The red key opens the brass door.",
+      "threshold_arms": {
+        "4": {
+          "canonical_id": "a2d0d95a0cc2ea623279076732649badc11bf491ff6382d945d9adbd414ff7eb",
+          "hydrated_occurrence_ids": [
+            "repeat-0-occurrence-0",
+            "repeat-0-occurrence-1",
+            "repeat-0-occurrence-2",
+            "repeat-0-occurrence-3",
+            "repeat-0-occurrence-4"
+          ],
+          "latest_version_id": "95d8880f09101d2bb697a9426a1b458e2881028aebb0f5bb4cee29ca8df83f2d",
+          "occurrence_ids": [
+            "repeat-0-occurrence-0",
+            "repeat-0-occurrence-1",
+            "repeat-0-occurrence-2",
+            "repeat-0-occurrence-3",
+            "repeat-0-occurrence-4"
+          ],
+          "support": 5,
+          "version_count": 2
+        },
+        "5": {
+          "canonical_id": "a2d0d95a0cc2ea623279076732649badc11bf491ff6382d945d9adbd414ff7eb",
+          "hydrated_occurrence_ids": [
+            "repeat-0-occurrence-0",
+            "repeat-0-occurrence-1",
+            "repeat-0-occurrence-2",
+            "repeat-0-occurrence-3",
+            "repeat-0-occurrence-4"
+          ],
+          "latest_version_id": "ddd914aeda3c0ee343224bf2caacf6b864689ce350a58482561bae1f28c8a2f7",
+          "occurrence_ids": [
+            "repeat-0-occurrence-0",
+            "repeat-0-occurrence-1",
+            "repeat-0-occurrence-2",
+            "repeat-0-occurrence-3",
+            "repeat-0-occurrence-4"
+          ],
+          "support": 5,
+          "version_count": 1
+        }
+      }
+    },
+    {
+      "address_digest": "7045c87497c8d4ed86ebf387fe6ccd3fa1c1206c4ad23511a3677966ae65b17a",
+      "expected_occurrence_ids": [
+        "repeat-1-occurrence-0",
+        "repeat-1-occurrence-1",
+        "repeat-1-occurrence-2",
+        "repeat-1-occurrence-3",
+        "repeat-1-occurrence-4"
+      ],
+      "group": 1,
+      "retrieved_occurrence_ids": [
+        "repeat-1-occurrence-0",
+        "repeat-1-occurrence-1",
+        "repeat-1-occurrence-2",
+        "repeat-1-occurrence-3",
+        "repeat-1-occurrence-4"
+      ],
+      "text": "Mara placed the cup beside the lamp.",
+      "threshold_arms": {
+        "4": {
+          "canonical_id": "60fe97d1eaa5795702c0e303aa3e9d9db80c68c94f93bd1bff344512e9eae3ec",
+          "hydrated_occurrence_ids": [
+            "repeat-1-occurrence-0",
+            "repeat-1-occurrence-1",
+            "repeat-1-occurrence-2",
+            "repeat-1-occurrence-3",
+            "repeat-1-occurrence-4"
+          ],
+          "latest_version_id": "6aa3f107c663b36dea7ff433d7eb472e355d85170819af7bfb6fabc1188a0fdd",
+          "occurrence_ids": [
+            "repeat-1-occurrence-0",
+            "repeat-1-occurrence-1",
+            "repeat-1-occurrence-2",
+            "repeat-1-occurrence-3",
+            "repeat-1-occurrence-4"
+          ],
+          "support": 5,
+          "version_count": 2
+        },
+        "5": {
+          "canonical_id": "60fe97d1eaa5795702c0e303aa3e9d9db80c68c94f93bd1bff344512e9eae3ec",
+          "hydrated_occurrence_ids": [
+            "repeat-1-occurrence-0",
+            "repeat-1-occurrence-1",
+            "repeat-1-occurrence-2",
+            "repeat-1-occurrence-3",
+            "repeat-1-occurrence-4"
+          ],
+          "latest_version_id": "29e34af0bd5b5d9abb0a65b912a61f78dc786eade449738780993595a98678db",
+          "occurrence_ids": [
+            "repeat-1-occurrence-0",
+            "repeat-1-occurrence-1",
+            "repeat-1-occurrence-2",
+            "repeat-1-occurrence-3",
+            "repeat-1-occurrence-4"
+          ],
+          "support": 5,
+          "version_count": 1
+        }
+      }
+    },
+    {
+      "address_digest": "96b412bea9d53d1b6750d21aa7013ae6b48b7d02044f7771382eaf50e32943e8",
+      "expected_occurrence_ids": [
+        "repeat-2-occurrence-0",
+        "repeat-2-occurrence-1",
+        "repeat-2-occurrence-2",
+        "repeat-2-occurrence-3",
+        "repeat-2-occurrence-4"
+      ],
+      "group": 2,
+      "retrieved_occurrence_ids": [
+        "repeat-2-occurrence-0",
+        "repeat-2-occurrence-1",
+        "repeat-2-occurrence-2",
+        "repeat-2-occurrence-3",
+        "repeat-2-occurrence-4"
+      ],
+      "text": "At dawn the train crossed the river.",
+      "threshold_arms": {
+        "4": {
+          "canonical_id": "1b971b0d69a23a70a5c5ec454845e65ca031902c2974fc2c4dc33ccd5b2b6056",
+          "hydrated_occurrence_ids": [
+            "repeat-2-occurrence-0",
+            "repeat-2-occurrence-1",
+            "repeat-2-occurrence-2",
+            "repeat-2-occurrence-3",
+            "repeat-2-occurrence-4"
+          ],
+          "latest_version_id": "1bddbe236a67ce6ae169c94f12739a28fd5e1b7b924f87b45cbde65efef77d01",
+          "occurrence_ids": [
+            "repeat-2-occurrence-0",
+            "repeat-2-occurrence-1",
+            "repeat-2-occurrence-2",
+            "repeat-2-occurrence-3",
+            "repeat-2-occurrence-4"
+          ],
+          "support": 5,
+          "version_count": 2
+        },
+        "5": {
+          "canonical_id": "1b971b0d69a23a70a5c5ec454845e65ca031902c2974fc2c4dc33ccd5b2b6056",
+          "hydrated_occurrence_ids": [
+            "repeat-2-occurrence-0",
+            "repeat-2-occurrence-1",
+            "repeat-2-occurrence-2",
+            "repeat-2-occurrence-3",
+            "repeat-2-occurrence-4"
+          ],
+          "latest_version_id": "48731e00fa39530b0048ed3e91f174bcc6b92ee3ef0caf66e06c8c88d80d7f45",
+          "occurrence_ids": [
+            "repeat-2-occurrence-0",
+            "repeat-2-occurrence-1",
+            "repeat-2-occurrence-2",
+            "repeat-2-occurrence-3",
+            "repeat-2-occurrence-4"
+          ],
+          "support": 5,
+          "version_count": 1
+        }
+      }
+    }
+  ],
+  "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "source_episodes_immutable": true,
+  "source_evidence_deleted": false,
+  "stream": [
+    {
+      "address_digest": "a17860d20b0b3977286596711f6cb87a1dcc4d2b9ae49f07e7437d204d027c4f",
+      "episode_id": "repeat-0-occurrence-0",
+      "group": 0,
+      "kind": "repeated",
+      "occurrence": 0,
+      "ordinal": 0,
+      "state_count": 9,
+      "text": "The red key opens the brass door."
+    },
+    {
+      "address_digest": "7045c87497c8d4ed86ebf387fe6ccd3fa1c1206c4ad23511a3677966ae65b17a",
+      "episode_id": "repeat-1-occurrence-0",
+      "group": 1,
+      "kind": "repeated",
+      "occurrence": 0,
+      "ordinal": 1,
+      "state_count": 10,
+      "text": "Mara placed the cup beside the lamp."
+    },
+    {
+      "address_digest": "96b412bea9d53d1b6750d21aa7013ae6b48b7d02044f7771382eaf50e32943e8",
+      "episode_id": "repeat-2-occurrence-0",
+      "group": 2,
+      "kind": "repeated",
+      "occurrence": 0,
+      "ordinal": 2,
+      "state_count": 9,
+      "text": "At dawn the train crossed the river."
+    },
+    {
+      "address_digest": "1d0f705d89892f044b2e510004e4f2d0b96420eb76b4c49854c53f14fa8d49f7",
+      "episode_id": "novel-0",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 3,
+      "state_count": 23,
+      "text": "Novel episode 00: marker 94444e898436."
+    },
+    {
+      "address_digest": "66b70227f7085555769459ebe0a4d5213490bfadd7d388146689a2cc7a72fdef",
+      "episode_id": "novel-1",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 4,
+      "state_count": 20,
+      "text": "Novel episode 01: marker db022fe670d9."
+    },
+    {
+      "address_digest": "6ceb64f6a1b12d63dd069d3122c34ba2198bbd38bcf4301c87a3c8a37df953e5",
+      "episode_id": "novel-2",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 5,
+      "state_count": 18,
+      "text": "Novel episode 02: marker c95effef86bb."
+    },
+    {
+      "address_digest": "a17860d20b0b3977286596711f6cb87a1dcc4d2b9ae49f07e7437d204d027c4f",
+      "episode_id": "repeat-0-occurrence-1",
+      "group": 0,
+      "kind": "repeated",
+      "occurrence": 1,
+      "ordinal": 6,
+      "state_count": 9,
+      "text": "The red key opens the brass door."
+    },
+    {
+      "address_digest": "7045c87497c8d4ed86ebf387fe6ccd3fa1c1206c4ad23511a3677966ae65b17a",
+      "episode_id": "repeat-1-occurrence-1",
+      "group": 1,
+      "kind": "repeated",
+      "occurrence": 1,
+      "ordinal": 7,
+      "state_count": 10,
+      "text": "Mara placed the cup beside the lamp."
+    },
+    {
+      "address_digest": "96b412bea9d53d1b6750d21aa7013ae6b48b7d02044f7771382eaf50e32943e8",
+      "episode_id": "repeat-2-occurrence-1",
+      "group": 2,
+      "kind": "repeated",
+      "occurrence": 1,
+      "ordinal": 8,
+      "state_count": 9,
+      "text": "At dawn the train crossed the river."
+    },
+    {
+      "address_digest": "705d955e6910e985a65ced5804e9154eee9aef2d7c4763ffabeb3964d85c9a42",
+      "episode_id": "novel-3",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 9,
+      "state_count": 22,
+      "text": "Novel episode 03: marker f51f582304a6."
+    },
+    {
+      "address_digest": "6199580b008435f84cc8e6bb62d5c4ef7523eefcc1871272e92bf7fc9cfad213",
+      "episode_id": "novel-4",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 10,
+      "state_count": 20,
+      "text": "Novel episode 04: marker 114ee0ecae3b."
+    },
+    {
+      "address_digest": "dc068e61947cddde1db16c9c0e96b1586c0cd91f5cade006fb49c448531e9836",
+      "episode_id": "novel-5",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 11,
+      "state_count": 21,
+      "text": "Novel episode 05: marker 46e55afc2d03."
+    },
+    {
+      "address_digest": "a17860d20b0b3977286596711f6cb87a1dcc4d2b9ae49f07e7437d204d027c4f",
+      "episode_id": "repeat-0-occurrence-2",
+      "group": 0,
+      "kind": "repeated",
+      "occurrence": 2,
+      "ordinal": 12,
+      "state_count": 9,
+      "text": "The red key opens the brass door."
+    },
+    {
+      "address_digest": "7045c87497c8d4ed86ebf387fe6ccd3fa1c1206c4ad23511a3677966ae65b17a",
+      "episode_id": "repeat-1-occurrence-2",
+      "group": 1,
+      "kind": "repeated",
+      "occurrence": 2,
+      "ordinal": 13,
+      "state_count": 10,
+      "text": "Mara placed the cup beside the lamp."
+    },
+    {
+      "address_digest": "96b412bea9d53d1b6750d21aa7013ae6b48b7d02044f7771382eaf50e32943e8",
+      "episode_id": "repeat-2-occurrence-2",
+      "group": 2,
+      "kind": "repeated",
+      "occurrence": 2,
+      "ordinal": 14,
+      "state_count": 9,
+      "text": "At dawn the train crossed the river."
+    },
+    {
+      "address_digest": "0cc7dd596c8cb2e05e934fb25ddff2cd879cf2c05e3e49ebe4c0b1fb55e30c0a",
+      "episode_id": "novel-6",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 15,
+      "state_count": 22,
+      "text": "Novel episode 06: marker 8a071fa6c94b."
+    },
+    {
+      "address_digest": "efd5b69239c8033de8b49e7f868ba204f18dc5f6b7cbc9864e2b410fab65aee0",
+      "episode_id": "novel-7",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 16,
+      "state_count": 21,
+      "text": "Novel episode 07: marker edb502832451."
+    },
+    {
+      "address_digest": "3ef63eeac4e0c8d8250d209860e9ec84f0189111934d23a989517e750b78e54a",
+      "episode_id": "novel-8",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 17,
+      "state_count": 21,
+      "text": "Novel episode 08: marker 3494c8fcaac0."
+    },
+    {
+      "address_digest": "a17860d20b0b3977286596711f6cb87a1dcc4d2b9ae49f07e7437d204d027c4f",
+      "episode_id": "repeat-0-occurrence-3",
+      "group": 0,
+      "kind": "repeated",
+      "occurrence": 3,
+      "ordinal": 18,
+      "state_count": 9,
+      "text": "The red key opens the brass door."
+    },
+    {
+      "address_digest": "7045c87497c8d4ed86ebf387fe6ccd3fa1c1206c4ad23511a3677966ae65b17a",
+      "episode_id": "repeat-1-occurrence-3",
+      "group": 1,
+      "kind": "repeated",
+      "occurrence": 3,
+      "ordinal": 19,
+      "state_count": 10,
+      "text": "Mara placed the cup beside the lamp."
+    },
+    {
+      "address_digest": "96b412bea9d53d1b6750d21aa7013ae6b48b7d02044f7771382eaf50e32943e8",
+      "episode_id": "repeat-2-occurrence-3",
+      "group": 2,
+      "kind": "repeated",
+      "occurrence": 3,
+      "ordinal": 20,
+      "state_count": 9,
+      "text": "At dawn the train crossed the river."
+    },
+    {
+      "address_digest": "524abc1297dcddfd1bb0a25be839965c3bf5fc5543f963f53103c5f409b5d3af",
+      "episode_id": "novel-9",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 21,
+      "state_count": 22,
+      "text": "Novel episode 09: marker 0a482f1d4fd3."
+    },
+    {
+      "address_digest": "959024ae6030e4f34442cc41ae868afbb119e710e21c7c25e9364e64943a0867",
+      "episode_id": "novel-10",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 22,
+      "state_count": 22,
+      "text": "Novel episode 10: marker 4eef20919114."
+    },
+    {
+      "address_digest": "d57b681f3161fcbce128ebf1715513015254f79f19a71cccf49a76f19ed4c456",
+      "episode_id": "novel-11",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 23,
+      "state_count": 22,
+      "text": "Novel episode 11: marker d7443a39d2a2."
+    },
+    {
+      "address_digest": "a17860d20b0b3977286596711f6cb87a1dcc4d2b9ae49f07e7437d204d027c4f",
+      "episode_id": "repeat-0-occurrence-4",
+      "group": 0,
+      "kind": "repeated",
+      "occurrence": 4,
+      "ordinal": 24,
+      "state_count": 9,
+      "text": "The red key opens the brass door."
+    },
+    {
+      "address_digest": "7045c87497c8d4ed86ebf387fe6ccd3fa1c1206c4ad23511a3677966ae65b17a",
+      "episode_id": "repeat-1-occurrence-4",
+      "group": 1,
+      "kind": "repeated",
+      "occurrence": 4,
+      "ordinal": 25,
+      "state_count": 10,
+      "text": "Mara placed the cup beside the lamp."
+    },
+    {
+      "address_digest": "96b412bea9d53d1b6750d21aa7013ae6b48b7d02044f7771382eaf50e32943e8",
+      "episode_id": "repeat-2-occurrence-4",
+      "group": 2,
+      "kind": "repeated",
+      "occurrence": 4,
+      "ordinal": 26,
+      "state_count": 9,
+      "text": "At dawn the train crossed the river."
+    },
+    {
+      "address_digest": "03190d9ec766a2b281329b7493db8951841e27216e87928eea10d919d65eb70c",
+      "episode_id": "novel-12",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 27,
+      "state_count": 21,
+      "text": "Novel episode 12: marker 95ada866f7e6."
+    },
+    {
+      "address_digest": "7517b3da12b1daab03a6a9b2e6aac74788380c95be487c73467e855894c0c8c7",
+      "episode_id": "novel-13",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 28,
+      "state_count": 22,
+      "text": "Novel episode 13: marker 1696a65a1bb2."
+    },
+    {
+      "address_digest": "0028956724983e939b06fe2fa7e0e95cb8b40a71a8ea55ed2e4b47b4d1ecc179",
+      "episode_id": "novel-14",
+      "group": null,
+      "kind": "novel",
+      "occurrence": 0,
+      "ordinal": 29,
+      "state_count": 23,
+      "text": "Novel episode 14: marker 5c243a73382f."
+    }
+  ],
+  "stream_occurrences": 30,
+  "tau_threshold": 0.8
+}

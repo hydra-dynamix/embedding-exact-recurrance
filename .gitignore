@@ -8,3 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Uncompressed real-Qwen episode evidence; compact results remain tracked.
+artifacts/interleaved-repeated-episode-consolidation/evidence/

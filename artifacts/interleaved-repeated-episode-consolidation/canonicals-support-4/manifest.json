@@ -1,0 +1,179 @@
+{
+  "canonical_count": 3,
+  "canonicals": [
+    {
+      "address_digest": "96b412bea9d53d1b6750d21aa7013ae6b48b7d02044f7771382eaf50e32943e8",
+      "canonical_id": "1b971b0d69a23a70a5c5ec454845e65ca031902c2974fc2c4dc33ccd5b2b6056",
+      "encoding_id": "efad6def27d05a05577d752bc54f764f517ba5f5cb58bd02dae81b6b83a970d0",
+      "versions": [
+        {
+          "admitted_at_stream_ordinal": 20,
+          "canonical_id": "1b971b0d69a23a70a5c5ec454845e65ca031902c2974fc2c4dc33ccd5b2b6056",
+          "encoding_id": "efad6def27d05a05577d752bc54f764f517ba5f5cb58bd02dae81b6b83a970d0",
+          "occurrence_ids": [
+            "repeat-2-occurrence-0",
+            "repeat-2-occurrence-1",
+            "repeat-2-occurrence-2",
+            "repeat-2-occurrence-3"
+          ],
+          "predecessor_version_id": null,
+          "sequenced_address": {
+            "address_digest": "96b412bea9d53d1b6750d21aa7013ae6b48b7d02044f7771382eaf50e32943e8",
+            "state_count": 9,
+            "state_dimensions": 1024
+          },
+          "support_threshold": 4,
+          "version_id": "2503172cacea3a7357600b2d92d64cb4a67058b3f84bffda65c5b3ffb4d1a547"
+        },
+        {
+          "admitted_at_stream_ordinal": 26,
+          "canonical_id": "1b971b0d69a23a70a5c5ec454845e65ca031902c2974fc2c4dc33ccd5b2b6056",
+          "encoding_id": "efad6def27d05a05577d752bc54f764f517ba5f5cb58bd02dae81b6b83a970d0",
+          "occurrence_ids": [
+            "repeat-2-occurrence-0",
+            "repeat-2-occurrence-1",
+            "repeat-2-occurrence-2",
+            "repeat-2-occurrence-3",
+            "repeat-2-occurrence-4"
+          ],
+          "predecessor_version_id": "2503172cacea3a7357600b2d92d64cb4a67058b3f84bffda65c5b3ffb4d1a547",
+          "sequenced_address": {
+            "address_digest": "96b412bea9d53d1b6750d21aa7013ae6b48b7d02044f7771382eaf50e32943e8",
+            "state_count": 9,
+            "state_dimensions": 1024
+          },
+          "support_threshold": 4,
+          "version_id": "1bddbe236a67ce6ae169c94f12739a28fd5e1b7b924f87b45cbde65efef77d01"
+        }
+      ]
+    },
+    {
+      "address_digest": "7045c87497c8d4ed86ebf387fe6ccd3fa1c1206c4ad23511a3677966ae65b17a",
+      "canonical_id": "60fe97d1eaa5795702c0e303aa3e9d9db80c68c94f93bd1bff344512e9eae3ec",
+      "encoding_id": "efad6def27d05a05577d752bc54f764f517ba5f5cb58bd02dae81b6b83a970d0",
+      "versions": [
+        {
+          "admitted_at_stream_ordinal": 19,
+          "canonical_id": "60fe97d1eaa5795702c0e303aa3e9d9db80c68c94f93bd1bff344512e9eae3ec",
+          "encoding_id": "efad6def27d05a05577d752bc54f764f517ba5f5cb58bd02dae81b6b83a970d0",
+          "occurrence_ids": [
+            "repeat-1-occurrence-0",
+            "repeat-1-occurrence-1",
+            "repeat-1-occurrence-2",
+            "repeat-1-occurrence-3"
+          ],
+          "predecessor_version_id": null,
+          "sequenced_address": {
+            "address_digest": "7045c87497c8d4ed86ebf387fe6ccd3fa1c1206c4ad23511a3677966ae65b17a",
+            "state_count": 10,
+            "state_dimensions": 1024
+          },
+          "support_threshold": 4,
+          "version_id": "d4df992d4cf6b383c5ca8a2cfb535c5d0be8c55ffcf3a37b143aa05143dd841d"
+        },
+        {
+          "admitted_at_stream_ordinal": 25,
+          "canonical_id": "60fe97d1eaa5795702c0e303aa3e9d9db80c68c94f93bd1bff344512e9eae3ec",
+          "encoding_id": "efad6def27d05a05577d752bc54f764f517ba5f5cb58bd02dae81b6b83a970d0",
+          "occurrence_ids": [
+            "repeat-1-occurrence-0",
+            "repeat-1-occurrence-1",
+            "repeat-1-occurrence-2",
+            "repeat-1-occurrence-3",
+            "repeat-1-occurrence-4"
+          ],
+          "predecessor_version_id": "d4df992d4cf6b383c5ca8a2cfb535c5d0be8c55ffcf3a37b143aa05143dd841d",
+          "sequenced_address": {
+            "address_digest": "7045c87497c8d4ed86ebf387fe6ccd3fa1c1206c4ad23511a3677966ae65b17a",
+            "state_count": 10,
+            "state_dimensions": 1024
+          },
+          "support_threshold": 4,
+          "version_id": "6aa3f107c663b36dea7ff433d7eb472e355d85170819af7bfb6fabc1188a0fdd"
+        }
+      ]
+    },
+    {
+      "address_digest": "a17860d20b0b3977286596711f6cb87a1dcc4d2b9ae49f07e7437d204d027c4f",
+      "canonical_id": "a2d0d95a0cc2ea623279076732649badc11bf491ff6382d945d9adbd414ff7eb",
+      "encoding_id": "efad6def27d05a05577d752bc54f764f517ba5f5cb58bd02dae81b6b83a970d0",
+      "versions": [
+        {
+          "admitted_at_stream_ordinal": 18,
+          "canonical_id": "a2d0d95a0cc2ea623279076732649badc11bf491ff6382d945d9adbd414ff7eb",
+          "encoding_id": "efad6def27d05a05577d752bc54f764f517ba5f5cb58bd02dae81b6b83a970d0",
+          "occurrence_ids": [
+            "repeat-0-occurrence-0",
+            "repeat-0-occurrence-1",
+            "repeat-0-occurrence-2",
+            "repeat-0-occurrence-3"
+          ],
+          "predecessor_version_id": null,
+          "sequenced_address": {
+            "address_digest": "a17860d20b0b3977286596711f6cb87a1dcc4d2b9ae49f07e7437d204d027c4f",
+            "state_count": 9,
+            "state_dimensions": 1024
+          },
+          "support_threshold": 4,
+          "version_id": "484305deeb04ccb51f6cf81315c6c8388dd3753be082fd1898c6d432392782aa"
+        },
+        {
+          "admitted_at_stream_ordinal": 24,
+          "canonical_id": "a2d0d95a0cc2ea623279076732649badc11bf491ff6382d945d9adbd414ff7eb",
+          "encoding_id": "efad6def27d05a05577d752bc54f764f517ba5f5cb58bd02dae81b6b83a970d0",
+          "occurrence_ids": [
+            "repeat-0-occurrence-0",
+            "repeat-0-occurrence-1",
+            "repeat-0-occurrence-2",
+            "repeat-0-occurrence-3",
+            "repeat-0-occurrence-4"
+          ],
+          "predecessor_version_id": "484305deeb04ccb51f6cf81315c6c8388dd3753be082fd1898c6d432392782aa",
+          "sequenced_address": {
+            "address_digest": "a17860d20b0b3977286596711f6cb87a1dcc4d2b9ae49f07e7437d204d027c4f",
+            "state_count": 9,
+            "state_dimensions": 1024
+          },
+          "support_threshold": 4,
+          "version_id": "95d8880f09101d2bb697a9426a1b458e2881028aebb0f5bb4cee29ca8df83f2d"
+        }
+      ]
+    }
+  ],
+  "format": "exact-episode-canonical-catalog-v1",
+  "observed_episode_ids": [
+    "repeat-0-occurrence-0",
+    "repeat-1-occurrence-0",
+    "repeat-2-occurrence-0",
+    "novel-0",
+    "novel-1",
+    "novel-2",
+    "repeat-0-occurrence-1",
+    "repeat-1-occurrence-1",
+    "repeat-2-occurrence-1",
+    "novel-3",
+    "novel-4",
+    "novel-5",
+    "repeat-0-occurrence-2",
+    "repeat-1-occurrence-2",
+    "repeat-2-occurrence-2",
+    "novel-6",
+    "novel-7",
+    "novel-8",
+    "repeat-0-occurrence-3",
+    "repeat-1-occurrence-3",
+    "repeat-2-occurrence-3",
+    "novel-9",
+    "novel-10",
+    "novel-11",
+    "repeat-0-occurrence-4",
+    "repeat-1-occurrence-4",
+    "repeat-2-occurrence-4",
+    "novel-12",
+    "novel-13",
+    "novel-14"
+  ],
+  "source_episodes_embedded": false,
+  "stream_ordinal": 30,
+  "support_threshold": 4
+}

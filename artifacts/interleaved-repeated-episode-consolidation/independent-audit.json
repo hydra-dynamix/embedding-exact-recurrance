@@ -1,0 +1,24 @@
+{
+  "audited_canonicals_per_threshold": 3,
+  "audited_occurrences": 30,
+  "audited_thresholds": [
+    4,
+    5
+  ],
+  "checks": {
+    "all_15_novel_episodes_are_unconsolidated_singletons": true,
+    "all_30_occurrences_restart_hydrate": true,
+    "all_canonical_bindings_hydrate_and_replay": true,
+    "all_three_repeated_buckets_return_five_occurrences": true,
+    "all_treatment_checks_passed": true,
+    "both_thresholds_load_three_singular_canonicals": true,
+    "source_episodes_not_embedded_in_canonical_catalog": true,
+    "source_evidence_unchanged_during_query": true,
+    "threshold_4_versions_are_support_4_then_5": true,
+    "threshold_5_versions_are_support_5": true,
+    "treatment_reported_pass": true
+  },
+  "evidence_directory_sha256": "68c2f040a1e07bc3eb8b2ceaa27e7fa3c40326e593bf0c49b094293f0e165557",
+  "experiment_id": "interleaved-repeated-episode-consolidation",
+  "pass": true
+}
