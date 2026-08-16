@@ -1,0 +1,12 @@
+[project]
+name = "embedding-sequencing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+include = ["src"]
+dependencies = [
+    "numpy[cuda]>=2.5.2",
+    "torch>=2.13.0",
+    "transformers>=5.15.0",
+]
